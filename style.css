@@ -37,17 +37,16 @@ body {
     border-style: solid;
     border-width: thin;
     border-color: #302F2F;
-    gap: 10px;
     overflow: hidden;
 }
 
 #gridDiv {
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
     border-style: solid;
     border-width: thin;
     border-color: #302F2F;
-    background-color: white;
 }
 
 #secondLayer {
