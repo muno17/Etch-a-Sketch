@@ -3,8 +3,12 @@ let gridContainer = document.getElementById('gridContainer');
 // call gridCreator() when the page loads
 window.addEventListener('load', () => gridCreator())
 
-
-
+// change grid size based on slider position
+let sliderValue = document.getElementById('sliderValue');
+let sliderText = document.getElementById('sliderText');
+sliderValue.addEventListener('input', () => {
+    sliderText.innerHTML = sliderValue.value;
+})
 
 
 
