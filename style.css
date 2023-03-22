@@ -6,10 +6,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
 }
 
 #mainHeader {
     color: #BC81BF;
     text-shadow: 3px 3px 8px black;
     font-size: 50px;
+}
+
+#gridContainer {
+    display: flex;
+    background: black;
+    border-color: white;
+
+}
+
+div {
+    background: black;
+    border-color: white;
 }
