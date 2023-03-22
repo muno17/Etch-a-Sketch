@@ -18,9 +18,26 @@ body {
 
 #gridContainer {
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: black;
+    border-style: solid;
     border-color: white;
+    border-width: thick;
+    height: 500px;
+    width: 500px;
+}
 
+#gridContainer div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    height: 500px;
+    width: 500px;
 }
 
 
@@ -28,7 +45,7 @@ body {
     margin: 0;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
