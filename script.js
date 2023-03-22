@@ -7,16 +7,16 @@ window.addEventListener('load', () => gridCreator())
 
 
 
-// create a 16x16 grid
+// create a 32x32 grid
 function gridCreator() {
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 32; i++) {
         // create a div for each row
         let gridRow = document.createElement('div')
         gridRow.setAttribute('id', 'gridRow')
         gridContainer.appendChild(gridRow)
 
-        // create 16 divs per row
-        for (let j = 0; j < 16; j++) {
+        // create 32 divs per row
+        for (let j = 0; j < 32; j++) {
             let gridDiv = document.createElement('div')
             gridDiv.setAttribute('id', 'gridDiv')
             gridRow.appendChild(gridDiv);

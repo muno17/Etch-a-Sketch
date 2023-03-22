@@ -34,8 +34,8 @@ body {
     justify-content: space-between;
     flex: 1;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    border-width: thin;
+    border-color: #302F2F;
     gap: 10px;
 }
 
@@ -43,8 +43,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    border-width: thin;
+    border-color: #302F2F;
 }
 
 #secondLayer {
