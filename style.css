@@ -1,18 +1,19 @@
 body {
     background: #7B8183;
     margin: 0;
-    height: 1200px;
     font-family: ubuntu, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
+    height: 800px;
 }
 
 #mainHeader {
     color: #BC81BF;
     text-shadow: 3px 3px 8px black;
     font-size: 50px;
+    margin: 0;
 }
 
 #gridContainer {
@@ -22,7 +23,14 @@ body {
 
 }
 
-div {
-    background: black;
-    border-color: white;
+
+#secondLayer {
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leftSide {
 }

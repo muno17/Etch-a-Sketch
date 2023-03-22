@@ -1,4 +1,6 @@
 let gridContainer = document.getElementById('gridContainer');
+
+// call gridCreator() when the page loads
 window.addEventListener('load', () => gridCreator())
 
 
