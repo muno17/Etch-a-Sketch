@@ -1,21 +1,6 @@
+// create a grid based on sliderValue (16x16 default)
 let gridContainer = document.getElementById('gridContainer');
 
-// call gridCreator() when the page loads
-window.addEventListener('load', () => gridCreator());
-
-// change grid size based on slider position
-let sliderValue = document.getElementById('sliderValue');
-let sliderText = document.getElementById('sliderText');
-
-// update grid size when slider is moved
-sliderValue.addEventListener('mouseup', () => {
-    while (gridContainer.firstChild) {
-        gridContainer.removeChild(gridContainer.firstChild);
-    }
-    gridCreator();
-})
-
-// create a grid based on sliderValue (16x16 default)
 function gridCreator() {
     for (let i = 0; i < updateValue(); i++) {
         // create a div for each row
@@ -30,14 +15,32 @@ function gridCreator() {
             gridRow.appendChild(gridDiv);
 
             // add draw functionality
-            gridDiv.addEventListener('mousedown', (gridDiv) => {
+            gridDiv.addEventListener('mousedown', () => {
+                gridDiv.addEventListener('mousemove', (gridDiv) => {
                 gridDiv.target.style.backgroundColor = 'white';
             })
-            gridDiv.addEventListener('mousemove', (gridDiv) => {
-                    gridDiv.target.style.backgroundColor = 'white'
-            })
+        })
         }
 }}
+
+
+// call gridCreator() when the page loads
+window.addEventListener('load', () => gridCreator());
+
+
+// change grid size based on slider position
+let sliderValue = document.getElementById('sliderValue');
+let sliderText = document.getElementById('sliderText');
+
+
+// update grid size when slider is moved
+sliderValue.addEventListener('mouseup', () => {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+    gridCreator();
+})
+
 
 // update slider value
 function updateValue () {
@@ -49,7 +52,6 @@ function updateValue () {
 
 
 // add functionality to reset button
-
 let reset = document.getElementById('reset');
 reset.addEventListener('click', () => {
     while (gridContainer.firstChild) {
