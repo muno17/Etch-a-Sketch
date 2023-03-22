@@ -7,7 +7,7 @@ window.addEventListener('load', () => gridCreator())
 let sliderValue = document.getElementById('sliderValue');
 let sliderText = document.getElementById('sliderText');
 sliderValue.addEventListener('input', () => {
-    sliderText.innerHTML = sliderValue.value;
+    sliderText.innerHTML = sliderValue.value + " x " + sliderValue.value;
 })
 
 
