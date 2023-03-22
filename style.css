@@ -18,7 +18,7 @@ body {
 
 #gridContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     background: black;
     border-style: solid;
@@ -28,33 +28,24 @@ body {
     width: 500px;
 }
 
-/* #gridContainer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-} */
- 
 
 #gridRow {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    gap: 10px;
+}
+
+#gridDiv {
+    display: flex;
     justify-content: space-evenly;
     border-style: solid;
     border-width: 1px;
     border-color: white;
 }
-
-#gridDiv {
-    display: flex;
-    justify-content: space-between;
-    border-style: solid;
-    border-width: 1px;
-    border-color: yellow;
-}
-
 
 #secondLayer {
     margin: 0;
