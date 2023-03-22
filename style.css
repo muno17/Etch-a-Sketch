@@ -28,16 +28,31 @@ body {
     width: 500px;
 }
 
-#gridContainer div {
+/* #gridContainer div {
     display: flex;
     flex-direction: column;
-
     justify-content: space-evenly;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: red;
-    height: 500px;
-    width: 500px;
+} */
+ 
+
+#gridRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+#gridDiv {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
 }
 
 
