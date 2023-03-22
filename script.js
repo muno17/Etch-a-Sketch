@@ -7,13 +7,13 @@ window.addEventListener('load', () => gridCreator());
 let sliderValue = document.getElementById('sliderValue');
 let sliderText = document.getElementById('sliderText');
 
+// update grid size when slider is moved
 sliderValue.addEventListener('mouseup', () => {
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
     gridCreator();
 })
-
 
 // create a grid based on sliderValue (16x16 default)
 function gridCreator() {
@@ -28,8 +28,13 @@ function gridCreator() {
             let gridDiv = document.createElement('div')
             gridDiv.setAttribute('id', 'gridDiv')
             gridRow.appendChild(gridDiv);
-            gridDiv.addEventListener('mouseover', (gridDiv) => {
+
+            // add draw functionality
+            gridDiv.addEventListener('mousedown', (gridDiv) => {
                 gridDiv.target.style.backgroundColor = 'white';
+            })
+            gridDiv.addEventListener('mousemove', (gridDiv) => {
+                    gridDiv.target.style.backgroundColor = 'white'
             })
         }
 }}
@@ -41,3 +46,14 @@ function updateValue () {
     })
     return sliderValue.value;
 }
+
+
+// add functionality to reset button
+
+let reset = document.getElementById('reset');
+reset.addEventListener('click', () => {
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+    gridCreator();
+})
