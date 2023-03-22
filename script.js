@@ -7,6 +7,17 @@ window.addEventListener('load', () => gridCreator())
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 // create a 32x32 grid
 function gridCreator() {
     for (let i = 0; i < 64; i++) {
