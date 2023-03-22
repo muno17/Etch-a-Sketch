@@ -26,6 +26,7 @@ body {
     border-width: thick;
     height: 500px;
     width: 500px;
+    overflow: hidden;
 }
 
 
@@ -37,6 +38,7 @@ body {
     border-width: thin;
     border-color: #302F2F;
     gap: 10px;
+    overflow: hidden;
 }
 
 #gridDiv {
@@ -45,6 +47,7 @@ body {
     border-style: solid;
     border-width: thin;
     border-color: #302F2F;
+    background-color: white;
 }
 
 #secondLayer {
@@ -55,5 +58,3 @@ body {
     align-items: center;
 }
 
-#leftSide {
-}
